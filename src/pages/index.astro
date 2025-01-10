@@ -15,6 +15,7 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
 import Skills from '../components/Skills.astro';
+import Animation from '../components/Animation.astro';
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('work'))
@@ -30,8 +31,8 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hi, my name is Agustín Llanán"
-					tagline="I am a creative and passionate Freelance Software Developer."
+					title="Let's build something amazing"
+					tagline="Pushing digital transformation forward."
 					align="start"
 				>
 					<div class="roles">
@@ -39,12 +40,8 @@ const projects = (await getCollection('work'))
 					</div>
 				</Hero>
 
-				<img
-					alt="Agustín Llanán smiling at the camera"
-					width="480"
-					height="620"
-					src="/assets/portrait-agus.jpg"
-				/>
+				<Animation />
+
 			</header>
 
 			<Skills />

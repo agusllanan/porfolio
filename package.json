@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@splinetool/runtime": "^1.9.58",
     "astro": "^3.1.4"
   }
 }
